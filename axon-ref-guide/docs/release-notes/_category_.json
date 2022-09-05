@@ -1,0 +1,8 @@
+{
+  "label": "Release Notes",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "This section details out all the release notes for the Major/Minor versions released up to date for both the Axon Framework and Axon Server."
+  }
+}

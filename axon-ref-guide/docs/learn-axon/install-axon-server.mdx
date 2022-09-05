@@ -1,0 +1,83 @@
+---
+sidebar_position: 3
+---
+
+### How to Install Axon Server? 
+
+
+Running Axon Server SE
+From the location where the files have been extracted, please run the following command
+$ ./axonserver.jar
+     _                     ____
+    / \   __  _____  _ __ / ___|  ___ _ ____   _____ _ __
+   / _ \  \ \/ / _ \| '_ \\___ \ / _ \ '__\ \ / / _ \ '__|
+  / ___ \  >  < (_) | | | |___) |  __/ |   \ V /  __/ |
+ /_/   \_\/_/\_\___/|_| |_|____/ \___|_|    \_/ \___|_|
+ Standard Edition                        Powered by AxonIQ
+This will start Axon Server SE using the default ports - 8024 for HTTP / 8124 for gRPC.
+The HTTP port is used to serve the Management UI and the REST API provided by Axon Server SE. The gRPC port is used by Axon Framework client applications to connect to Axon Server SE. The management UI can be opened at "http://localhost:8024" while the REST API is accessible at "http://localhost:8024/v1".
+The REST API provides an operation at "/v1/public/me" to get the configuration details for a running instance of Axon Server SE. A representation of the response is given below.
+{
+  "authentication": false,
+  "clustered": false,
+  "ssl": false,
+  "adminNode": true,
+  "developmentMode": false,
+  "storageContextNames": [
+    "default"
+  ],
+  "contextNames": [
+    "default"
+  ],
+  "httpPort": 8024,
+  "grpcPort": 8124,
+  "internalHostName": null,
+  "grpcInternalPort": 0,
+  "name": ${hostname},
+  "hostName": ${hostname}
+}
+
+```js
+function HighlightSomeText(highlight) {
+  if (highlight) {
+    // highlight-next-line
+    return 'This text is highlighted!';
+  }
+
+  return 'Nothing highlighted';
+}
+
+function HighlightMoreText(highlight) {
+  // highlight-start
+  if (highlight) {
+    return 'This range is highlighted!';
+  }
+  // highlight-end
+
+  return 'Nothing highlighted';
+}
+```
+
+
+## Numbering
+
+
+:::caution
+
+Try not to implement line 11
+
+:::
+
+```jsx {1,4-6,11} showLineNumbers
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```

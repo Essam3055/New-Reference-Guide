@@ -1,0 +1,8 @@
+{
+  "label": "Learn Axon",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Let's dig deeper into Axon framework and Axon server related concepts"
+  }
+}

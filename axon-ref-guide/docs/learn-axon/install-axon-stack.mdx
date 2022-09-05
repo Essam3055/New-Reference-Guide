@@ -1,0 +1,43 @@
+### How to install Full Axon stack 
+
+:::tip
+
+Axon provides a Quick Start Toolkit to familarize yourself with the setup required for Axon Framework and Axon Server SE (Standard Edition).
+The only pre-requisite to run the Quick Start is to have a Java 8+ JRE in your system.
+
+:::
+
+
+## Quick Start Toolkit Download
+
+The Quick Start Toolkit package is available for download at the following location -> https://axoniq.io/download.
+This package contains,
+
+- Axon Framework Binaries
+- Axon Server Standard Edition
+- Gift card sample application - Demo application designed to show various aspects of the platform
+- Getting started guide
+
+
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    const timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```

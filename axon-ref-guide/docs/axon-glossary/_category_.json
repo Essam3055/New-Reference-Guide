@@ -1,0 +1,8 @@
+{
+  "label": "Axon Glossary",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "This is a full index for Axon Framework and Axon server Concepts and Commands"
+  }
+}
