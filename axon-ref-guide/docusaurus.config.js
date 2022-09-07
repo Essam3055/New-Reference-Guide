@@ -8,15 +8,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'AxonIQ Reference Guide',
   tagline: 'Here you can find everything Axon!',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://Essam3055.github.io/',
+  baseUrl: '/New-Reference-Guide/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-
+  trailingSlash: false,
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'AxonIQ/Essam3055', // Usually your GitHub org/user name.
+  organizationName: 'Essam3055', // Usually your GitHub org/user name.
   projectName: 'New-Reference-Guide', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
