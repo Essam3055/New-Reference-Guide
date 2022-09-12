@@ -6,18 +6,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'AxonIQ Reference Guide',
+  title: 'AxonIQ Documentation',
   tagline: 'Here you can find everything Axon!',
   url: 'https://Essam3055.github.io/',
-  baseUrl: '/New-Reference-Guide/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   trailingSlash: false,
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Essam3055', // Usually your GitHub org/user name.
-  projectName: 'New-Reference-Guide', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -36,8 +32,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          lastVersion: 'current', // Temporarily here until first release
         },
         blog: {
           showReadingTime: true,
@@ -52,9 +47,9 @@ const config = {
       }),
     ],
   ],
-
+  themes: ['@docusaurus/theme-live-codeblock'],
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
         title: 'AxonIQ Reference Guide',
@@ -68,6 +63,13 @@ const config = {
             docId: 'intro',
             position: 'left',
             label: 'Weclome To Axon',
+          },
+          {
+            type: 'docsVersionDropdown',
+            label: 'Choose version',
+            position: 'left',
+            dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+            dropdownActiveClassDisabled: true,
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -139,8 +141,3 @@ const config = {
 };
 
 module.exports = config;
-module.exports = {
-  // ...
-  themes: ['@docusaurus/theme-live-codeblock'],
-  // ...
-};
