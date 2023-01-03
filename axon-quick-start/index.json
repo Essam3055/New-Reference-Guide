@@ -1,0 +1,54 @@
+{
+  "title": "Axon Quick Start",
+  "description": "Familiarize yourself with ​​​​​​​Axon Framework and Axon Server",
+  "difficulty": "Beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Run Axon Server",
+        "text": "01_install_axon_server.md"
+      },
+      {
+        "title": "Explore Axon Server Dashboard",
+        "text": "02_explore_axon_server.md"
+      },
+      {
+        "title": "Get the gift card demo app",
+        "text": "03_get_giftcard_demo.md"
+      },
+      {
+        "title": "Explore the gift card demo app",
+        "text": "04_explore_giftcard_demo.md"
+      },
+      {
+        "title": "Run the demo as monolith",
+        "text": "05_run_giftcard_demo_monolith.md"
+      },
+      {
+        "title": "Run the demo as micro-services",
+        "text": "06_run_giftcard_demo_micro.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "install_kotlin_ext.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "uieditorpath": "/root/giftcard-demo",
+    "showide": true,
+    "idePort": 23000,
+    "dashboards": [
+      {"name": "Axon Server UI", "port": 8024},
+      {"name": "Gift card UI", "port": 8080}
+    ]
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}
